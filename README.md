@@ -1,9 +1,8 @@
 # Compo-Framework - Frameworks 2022B - Prof. Jubert Perez
 
-Web Component Framework with Javascript
+Primera Entrega: Crear un componente Button que extiende del componente visual generico.
 
 Members:
-
 
 Ricardo Muchacho Ci 27.849.052
 
