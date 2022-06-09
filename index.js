@@ -1,1 +1,1 @@
-import "./components/Button";
+import "./components/Button.js";

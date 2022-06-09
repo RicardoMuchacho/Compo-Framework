@@ -42,3 +42,5 @@ class Button extends HTMLElement {
 }
 
 window.customElements.define("compo-button", Button);
+
+export default Button;
