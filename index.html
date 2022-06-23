@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script type="module" src="index.js" defer></script>
-  </head>
-  <body>
-    <h1>Frameworks - Compo web components</h1>
-    <p>Ricardo Muchacho, Ricardo Sulbaran, Rafael Carrizalez</p>
-    <p>
-      Custom component compo-button que extiende el componente generico
-      HTMLElement
-    </p>
-    <compo-button onclick="test()" title="Click Me!"></compo-button>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compo Framework</title>
 
-  <script>
-    function test() {
-      alert("Button works");
-    }
-  </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <p>1. Añadir css dinamicamente al componente boton. (presione varias veces)</p>
+    <div id="zoneOne">
+        <button id="btnOne" onclick="changeColorButton()">Presione aqui</button>
+    </div>
+    <br>
+    <p>2. Añadir css dinamicamente al componente edit. (presione varias veces, dentro y fuera del input-text)</p>
+    <div id="zoneTwo">
+        <input type="text" name="edit" id="inpEdit" onfocus="changeColorInput()">
+    </div>
+    <br>
+    <p>3. Cargar los dos componentes anteriores dinamicamente</p>
+    <button onclick="loadComponents()">Agregar/Quitar componentes</button>
+    <div id="zoneMagica"></div>
+</body>
 </html>
