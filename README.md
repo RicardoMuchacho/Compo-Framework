@@ -6,6 +6,6 @@ Members:
 
 Ricardo Muchacho Ci 27.849.052
 
-Ricardo Sulbaran
+Ricardo Sulbaran C.i 27.971.689
 
 Rafael Carrizalez Ci 26.709.046
