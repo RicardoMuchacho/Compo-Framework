@@ -16,18 +16,24 @@ class Dialog extends HTMLElement {
     openModal.innerHTML = this.getAttribute("title");
     openModal.onclick = () => {
       container.classList.add("active");
+      bg.classList.add("active");
     };
+
+    const bg = document.createElement("div");
+    bg.setAttribute("class", "modal-bg");
 
     const confirmBtn = document.createElement("button");
     confirmBtn.innerHTML = "Confirm";
     confirmBtn.onclick = () => {
       container.classList.remove("active");
+      bg.classList.remove("active");
     };
 
     const closeBtn = document.createElement("button");
     closeBtn.innerHTML = "Close";
     closeBtn.onclick = () => {
       container.classList.remove("active");
+      bg.classList.remove("active");
     };
 
     // Atributos
@@ -42,8 +48,9 @@ class Dialog extends HTMLElement {
 
     // Agregar elementos al shadow dom
     shadow.appendChild(linkElem);
-    shadow.appendChild(container);
+    shadow.appendChild(bg);
     shadow.appendChild(openModal);
+    shadow.appendChild(container);
     container.appendChild(header);
     container.appendChild(info);
     container.appendChild(confirmBtn);

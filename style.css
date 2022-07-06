@@ -13,6 +13,7 @@
 .modal-container {
   display: none;
   position: absolute;
+  background-color: white;
   top: 40%;
   left: 30%;
   width: 250px;
@@ -20,8 +21,19 @@
   padding: 10px;
   background: white;
   border-radius: 5px;
+  opacity: 1;
 }
 
+.modal-bg {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  display: none;
+}
 .active {
   display: block;
 }
