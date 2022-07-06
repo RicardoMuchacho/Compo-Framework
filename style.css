@@ -1,19 +1,38 @@
-.container {
-  display: block;
+.btn {
+  background-color: gray;
+}
+
+.red-btn {
+  background-color: red;
+}
+
+.yellow-btn {
+  background-color: yellow;
+}
+
+.modal-container {
+  display: none;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 30%;
-  width: 200px;
+  width: 250px;
   border: 1px solid black;
   padding: 10px;
   background: white;
   border-radius: 5px;
 }
 
+.active {
+  display: block;
+}
+
 button {
   margin-right: 5px;
 }
 
+.modalTitle {
+  margin: 0px;
+}
 .header {
   text-align: center;
 }
