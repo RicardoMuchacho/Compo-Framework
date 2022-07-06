@@ -1,27 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="utf-8" />
     <title>Compo Framework</title>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <h1>Dialog Component</h1>
 
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <p>1. Añadir css dinamicamente al componente boton. (presione varias veces)</p>
-    <div id="zoneOne">
-        <button id="btnOne" onclick="changeColorButton()">Presione aqui</button>
-    </div>
-    <br>
-    <p>2. Añadir css dinamicamente al componente edit. (presione varias veces, dentro y fuera del input-text)</p>
-    <div id="zoneTwo">
-        <input type="text" name="edit" id="inpEdit" onfocus="changeColorInput()">
-    </div>
-    <br>
-    <p>3. Cargar los dos componentes anteriores dinamicamente</p>
-    <button onclick="loadComponents()">Agregar/Quitar componentes</button>
-    <div id="zoneMagica"></div>
-</body>
+    <compo-dialog
+      btnTitle="btnTitle"
+      dialog-text="Hello user, continue using the app?"
+      dialog-title="Welcome!"
+    ></compo-dialog>
+    <button onclick="openModal()">Click Me 2</button>
+  </body>
 </html>

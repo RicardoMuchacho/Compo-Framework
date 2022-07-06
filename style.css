@@ -1,27 +1,25 @@
-.btn-state-one {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-.btn-state-two {
-    background-color: #af4c4c; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+.container {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 200px;
+  border: 1px solid black;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
 }
 
-.inp-state-one {
-    border-radius: 5px;
-  }
-  .inp-state-two {
-    background-color: #def;
-  }
+button {
+  margin-right: 5px;
+}
+
+.header {
+  text-align: center;
+}
+
+.info {
+  font-size: small;
+  color: black;
+  background-color: aqua;
+}

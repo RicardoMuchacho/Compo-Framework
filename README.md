@@ -1,6 +1,6 @@
 # Compo-Framework - Frameworks 2022B - Prof. Jubert Perez
 
-Primera Entrega: Crear un componente Button que extiende del componente visual generico.
+Segunda Entrega: Agregar Css dinamico.
 
 Members:
 
